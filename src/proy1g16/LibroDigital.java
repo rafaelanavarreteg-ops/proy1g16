@@ -8,14 +8,15 @@ public class LibroDigital  extends Libro {
 	        this.tamanoArchivo = tamanoArchivo;
 	    }
 
-	    public int getTamanoArchivo() { 
+	    public double getTamanoArchivo() { 
 	        return tamanoArchivo; 
 	    }
 
-	    public void setTamanoArchivo(int tamanoArchivo) { 
+	    public void setTamanoArchivo(double tamanoArchivo) { 
 	        this.tamanoArchivo = tamanoArchivo; 
 	    }
 	}
+
 
 
 
