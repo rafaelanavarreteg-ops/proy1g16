@@ -35,9 +35,11 @@ public class CadenaLibrerias {
             auxLibro = auxLibro.getNext();
         }
         auxLibro.setNext(new NodoLibro(null, libro));
+        return;
     }
 
     public int ObtenerTipoDeContenido(String isbn) {
+        //REVISAR
         NodoSucursal auxSucursal = lista;
         while (auxSucursal.getNext() != null) {
             int tipo = auxSucursal.getNext().getSucursal().BuscarYDevolverTipoDeContenido(isbn);
@@ -66,6 +68,7 @@ public class CadenaLibrerias {
             }
             auxSucursal = auxSucursal.getNext();
         }
+        return;
     }
 
     public String mostrarDatosLibroPorISBN(String nombreSucursal, String isbn) {
@@ -221,3 +224,4 @@ public class CadenaLibrerias {
         }
     }
 }
+
